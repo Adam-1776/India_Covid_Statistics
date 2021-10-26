@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Covid Statistics</title>
+    <link rel="stylesheet" href="style.css"> 
+    <!-- <script type="text/javascript" src="d3.geo.min.js"></script>  -->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script>
+      d3version4 = d3
+      window.d3 = null
+    </script>
+    <script src="https://code.highcharts.com/maps/highmaps.js"></script>
+    <script src="https://code.highcharts.com/maps/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/mapdata/countries/in/in-all.js"></script>
+    <script src="main.js" defer></script>
+  </head>
+  <header>
+      <h1>India Covid-19 Statistics</h1>
+  </header>
+  <body>
+    <div id="map_container"></div>
+    <h5>View data for a particular state by clicking on it in the map above, or select it in the drop-down menu below</h5>
+    <u><h5 id="displayArea">Currently Displaying Data for: All of India</h5></u>
+    <div id="areaChoose">
+      <select name="area" id="areaSelect"></select>
+      <button id="areaButton" onclick="updateArea()">Submit</button>
+    </div>
+    <div id="linegraph">
+      <div id="variableButtons">
+      <button onclick="updateGraph(true,true,true,true)">Show All Four variables</button>
+      <button onclick="updateGraph(true,false,false,false)">Confirmed</button>
+      <button onclick="updateGraph(false,true,false,false)">Cured</button>
+      <button onclick="updateGraph(false,false,true,false)">Deaths</button>
+      <button onclick="updateGraph(false,false,false,true)">Active Cases</button>
+      </div>
+      <div id="india_linegraph"></div>
+    </div>
+    <h5 id="displayArea2">Covid-19 chronological data for all India</h5>
+    <h5 style="font-size: medium;">Note: Active cases = Confirmed - (Deaths + Cured)</h5>
+    <div id="table-wrapper">
+      <div id="india_table"></div>
+    </div>
+    <footer>
+      <p><a style="color: blue" href="https://github.com/Adam-1776/India_Covid_Statistics">Github Repository</a> with source code</p>
+      <p>Author: Adam Rizk<br>
+      <a href="mailto:adam@adamwrizk.com">adam@adamwrizk.com</a><br>
+      <a href="mailto:adamrizk9@gmail.com">adamrizk9@gmail.com</a></p>
+    </footer>
+  </body>
+</html>

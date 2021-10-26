@@ -1,0 +1,177 @@
+html{
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    text-decoration: lightgray;
+    text-align: center;
+    background-color: rgba(36, 1, 151, 0.774);
+}
+
+body{
+    border: 5px solid silver;
+    width: 85%;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lavender;
+}
+   
+header{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    margin: auto;
+    text-align: center;
+    font-size: 2vw;
+}
+
+h5{
+    font-size: 1.2vw;
+}
+
+#linegraph{
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 940px;
+    width: 70%;
+}
+
+#areaChoose{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+svg{
+    max-height: 570px;
+    max-width: 930px;
+}
+
+#table-wrapper {
+    position:relative;
+    padding-bottom: 20px;
+    width: 80%;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#india_table{
+    border: 5px solid black; 
+    height:450px;
+    overflow:auto;  
+    margin-top:20px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+table {
+    padding: 10px;
+    width:100%;
+}
+#table-wrapper table * {
+    background: lightgray;
+    color:black;
+}
+#table-wrapper table thead th .text {
+    position:absolute;   
+    top:-20px;
+    z-index:2;
+    height:20px;
+    width:65%;
+}
+
+table, th, td {
+    margin: auto;
+    border:1px solid black;
+    text-align: center;
+    table-layout: auto;
+    white-space: nowrap;
+    font-size: auto;
+    min-width: 30%;
+}
+  
+td, th {
+    padding: 3px 3px 3px 3px;
+}
+
+ 
+.loading {
+    margin-top: 10em;
+    text-align: center;
+    color: gray;
+}
+
+#map_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 600px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#areaChoose{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#areaSelect{
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 1.38em;
+}
+
+#areaButton{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#displayArea{
+    margin-top: -0.5em;
+}
+
+#variableButtons{
+    display: flex;
+    flex-direction: row;
+}
+
+button{
+    position: relative;
+    width: 140px;
+    height: 50px;
+    border-radius: 25px;
+    background: linear-gradient(40deg, #ff6ec4, #7873f5);
+    box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+    margin-top: 0.3em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 11px;
+  }
+
+  button:hover{
+    transform: scale(1.2) perspective(1px)
+  }
+
+  select{
+      height: 19px;
+  }
+
+  p{
+      font-size: 1.5em;
+  }
